@@ -1,5 +1,5 @@
 body {
-    background-color: #e1f4f3;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -13,4 +13,36 @@ a {
 
 a:hover {
     color: #f0f0f0;
+  }
+  #first{
+    border: 2px solid rgb(206, 205, 205);
+    border-radius: 25px;
+    box-shadow: 12px 12px 2px 1px rgba(149, 149, 150, 0.2);
+  }
+  .card{
+      border: 0px !important;
+  }
+  input{
+    border: 2px solid rgb(206, 205, 205);
+    border-radius: 10px;
+    color: #919090;
+  }
+  h5{
+      color: #2c2b2b;
+      font-family: initial;
+  }
+  select{
+      width: 100%;
+      border: 2px solid rgb(206, 205, 205);
+      border-radius: 10px;
+      color: #919090;
+      background-color: white;
+  }
+  h3{
+    color: #2c2b2b;
+    font-family: initial;
+  }
+  #sub_button{
+      background-color: var(--gm-fillbutton-container-color,#1a73e8);
+      color: white;
   }

@@ -19,55 +19,40 @@
 
 <body>
 
-    <!-- As a heading -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">FLIGHT PRICE</a>
-            </div>
-        </div>
-    </nav>
-
-    <br><br><br>
-
+ 
 
     <div class="container">
 
-
+        <div class="row">
+            <img src="static/css/flights_3.svg"  style="margin-top: 50px" alt="">
+        </div>
 
         <form action="\predict" method="post">
 
-
-            <div class="row">
-                <div class="col-sm-6">
+           
+            <div class="row" id="first">
+                <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Departure Date</h5>
                             <!-- Departure -->
-                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required" placeholder="">
                         </div>
                     </div>
                 </div>
                 <br>
                 <br>
                 <br>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Arrival Date</h5>
+                            <h5>Arrival Date</h5>
                             <!-- Arrival -->
                             <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
@@ -81,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Destination</h5>
@@ -96,19 +81,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-
-            <br>
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="col-sm-6">
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Stopage</h5>
+                            <h5 class="card-title">Stops</h5>
                             <!-- Total Stops -->
                             <select name="stops" required="required">
                                 <option value="0">Non-Stop</option>
@@ -120,10 +101,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Which Airline you want to travel?</h5>
+                            <h5 class="card-title">Airlines?</h5>
                             <!-- Airline -->
                             <select name="airline" id="airline" required="required">
                                 <option value="Jet Airways">Jet Airways</option>
@@ -143,15 +125,21 @@
                         </div>
                     </div>
                 </div>
+
+                <br>
+                <br>
+                <br>
+            <!-- Submit -->
+        <div class="col-sm-3" style="margin: auto; padding: 5px">
+            <input type="submit" value="Submit" class="btn"  id="sub_button">
+        </div>
             </div>
 
+           
 
 
-            <br>
-            <br>
-            <br>
-            <!-- Submit -->
-            <input type="submit" value="Submit" class="btn btn-secondary">
+
+           
         </form>
 
         <br>
@@ -160,8 +148,7 @@
 
         <br>
         <br>
-        <p>©2020 Amar Mandal</p>
-
+        
     </div>
 
 
